@@ -1,0 +1,90 @@
+{
+  "name": "matthieuh/electron-react-boilerplate",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "electron-react-boilerplate",
+  "branch": "",
+  "style": {
+    "name": "Material",
+    "componentSet": {
+      "nav": "nav/DarkAbsoluteNav",
+      "header": "header/GradientHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "Roboto, sans-serif",
+    "heading": {
+      "fontWeight": 500,
+      "letterSpacing": "-0.01em"
+    },
+    "colors": {
+      "text": "#212121",
+      "background": "#fff",
+      "primary": "#2196f3",
+      "secondary": "#1565c0",
+      "highlight": "#ff4081",
+      "border": "#e0e0e0",
+      "muted": "#f5f5f5"
+    },
+    "layout": {
+      "centered": true,
+      "bannerHeight": "80vh",
+      "maxWidth": 896
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/matthieuh/electron-react-boilerplate",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/electron-react-boilerplate",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "electron-react-boilerplate",
+      "subhead": "Live editing development on desktop app",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "electron-react-boilerplate: Live editing development on desktop app",
+          "url": ""
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "matthieuh",
+          "repo": "electron-react-boilerplate"
+        }
+      ],
+      "text": "v0.10.0"
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "\n<p><a href=\"https://travis-ci.org/chentsulin/electron-react-boilerplate\"><img src=\"https://travis-ci.org/chentsulin/electron-react-boilerplate.svg?branch=master\"></a>\n<a href=\"https://ci.appveyor.com/project/chentsulin/electron-react-boilerplate/branch/master\"><img src=\"https://ci.appveyor.com/api/projects/status/github/chentsulin/electron-react-boilerplate?svg=true\"></a>\n<a href=\"https://david-dm.org/chentsulin/electron-react-boilerplate\"><img src=\"https://img.shields.io/david/chentsulin/electron-react-boilerplate.svg\"></a>\n<a href=\"https://npmjs.org/package/electron-react-boilerplate\"><img src=\"https://img.shields.io/npm/v/electron-react-boilerplate.svg?style=flat-square\"></a>\n<a href=\"https://gitter.im/electron-react-boilerplate/Lobby?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge\"><img src=\"https://badges.gitter.im/electron-react-boilerplate/Lobby.svg\"></a></p>\n<p><img src=\"./erb-logo.png\"></p>\n<blockquote>\n<p>Live editing development on desktop app</p>\n</blockquote>\n<p><a href=\"http://electron.atom.io/\">Electron</a> application boilerplate based on <a href=\"https://facebook.github.io/react/\">React</a>, <a href=\"https://github.com/reactjs/redux\">Redux</a>, <a href=\"https://github.com/reactjs/react-router\">React Router</a>, <a href=\"http://webpack.github.io/docs/\">Webpack</a>, <a href=\"https://github.com/gaearon/react-transform-hmr\">React Transform HMR</a> for rapid application development</p>\n<h2>Screenshot</h2>\n<p><img src=\"https://cloud.githubusercontent.com/assets/3382565/10557547/b1f07a4e-74e3-11e5-8d27-79ab6947d429.gif\"></p>\n<h2>Install</h2>\n<ul>\n<li><strong>Note: requires a node version &gt;= 6 and an npm version &gt;= 3.</strong></li>\n<li><strong>If you have installation or compilation issues with this project, please see <a href=\"https://github.com/chentsulin/electron-react-boilerplate/issues/400\">our debugging guide</a></strong></li>\n</ul>\n<p>First, clone the repo via git:</p>\n<pre>git <span class=\"hljs-built_in\">clone</span> https://github.com/chentsulin/electron-react-boilerplate.git your-project-name</pre><p>And then install dependencies.\n<strong>ProTip</strong>: Install with <a href=\"https://github.com/yarnpkg/yarn\">yarn</a> for faster and safer installation</p>\n<pre>$ <span class=\"hljs-built_in\">cd</span> your-project-name &amp;&amp; npm install</pre><p>:bulb: <em>In order to remove boilerplate sample code, simply run <code>npm run cleanup</code>. After this is run, the initial sample boilerplate code will be removed in order for a clean project for starting custom dev</em></p>\n<h2>Run</h2>\n<p>Run these two commands <strong>simultaneously</strong> in different console tabs.</p>\n<pre>$ npm run hot-server\n$ npm run start-hot</pre><p>or run two servers with one command</p>\n<pre>$ npm run dev</pre><h2>Editor Configuration</h2>\n<p><strong>Atom</strong></p>\n<pre>apm install editorconfig es6-javascript atom-ternjs javascript-snippets linter linter-eslint language-babel autocomplete-modules file-icons</pre><p><strong>Sublime</strong></p>\n<ul>\n<li><a href=\"https://github.com/sindresorhus/editorconfig-sublime#readme\">Editorconfig Integration</a></li>\n<li><a href=\"https://github.com/SublimeLinter/SublimeLinter3\">Linting</a></li>\n<li><a href=\"https://github.com/roadhump/SublimeLinter-eslint\">ESLint Integration</a></li>\n<li><a href=\"https://github.com/babel/babel-sublime\">Syntax Highlighting</a></li>\n<li><a href=\"https://github.com/ternjs/tern_for_sublime\">Autocompletion</a></li>\n<li><a href=\"https://packagecontrol.io/packages/JavaScript%20%26%20NodeJS%20Snippets\">Node Snippets</a></li>\n<li><a href=\"https://packagecontrol.io/packages/ES6-Toolkit\">ES6 Snippets</a></li>\n</ul>\n<p><strong>Others</strong></p>\n<ul>\n<li><a href=\"http://editorconfig.org/#download\">Editorconfig</a></li>\n<li><a href=\"http://eslint.org/docs/user-guide/integrations#editors\">ESLint</a></li>\n<li>Babel Syntax Plugin</li>\n</ul>\n<h2>DevTools</h2>\n<h4>Toggle Chrome DevTools</h4>\n<ul>\n<li>OS X: Cmd Alt I or F12</li>\n<li>Linux: Ctrl Shift I or F12</li>\n<li>Windows: Ctrl Shift I or F12</li>\n</ul>\n<p><em>See <a href=\"https://github.com/sindresorhus/electron-debug\">electron-debug</a> for more information.</em></p>\n<h4>DevTools extension</h4>\n<p>This boilerplate is included following DevTools extensions:</p>\n<ul>\n<li><a href=\"https://github.com/electron/devtron\">Devtron</a> - Install via <a href=\"https://github.com/sindresorhus/electron-debug\">electron-debug</a>.</li>\n<li><a href=\"https://github.com/facebook/react-devtools\">React Developer Tools</a> - Install via <a href=\"https://github.com/GPMDP/electron-devtools-installer\">electron-devtools-installer</a>.</li>\n<li><a href=\"https://github.com/zalmoxisus/redux-devtools-extension\">Redux DevTools</a> - Install via <a href=\"https://github.com/GPMDP/electron-devtools-installer\">electron-devtools-installer</a>.</li>\n</ul>\n<p>You can find the tabs on Chrome DevTools.</p>\n<p>If you want to update extensions version, please set <code>UPGRADE_EXTENSIONS</code> env, just run:</p>\n<pre>$ UPGRADE_EXTENSIONS=1 npm run dev\n\n<span class=\"hljs-comment\"># For Windows</span>\n$ <span class=\"hljs-built_in\">set</span> UPGRADE_EXTENSIONS=1 &amp;&amp; npm run dev</pre><h2>CSS Modules</h2>\n<p>This boilerplate out of the box is configured to use <a href=\"https://github.com/css-modules/css-modules\">css-modules</a>.</p>\n<p>All <code>.css</code> file extensions will use css-modules unless it has <code>.global.css</code>.</p>\n<p>If you need global styles, stylesheets with <code>.global.css</code> will not go through the\ncss-modules loader. e.g. <code>app.global.css</code></p>\n<p>If you want to import global css libraries (like <code>bootstrap</code>), you can just write the following code in <code>.global.css</code>:</p>\n<pre>@<span class=\"hljs-keyword\">import</span> <span class=\"hljs-string\">&quot;~bootstrap/dist/css/bootstrap.css&quot;</span>;</pre><h2>Packaging</h2>\n<p>To package apps for the local platform:</p>\n<pre>$ npm run package</pre><p>To package apps for all platforms:</p>\n<p>First, refer to <a href=\"https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build\">Multi Platform Build</a> for dependencies.</p>\n<p>Then,</p>\n<pre>$ npm run package-all</pre><p>To package apps with options:</p>\n<pre>$ npm run package -- --[option]</pre><h2>Further commands</h2>\n<p>To run the application without packaging run</p>\n<pre>$ npm run build\n$ npm start</pre><p>To run End-to-End Test</p>\n<pre>$ npm run build\n$ npm run <span class=\"hljs-built_in\">test</span><span class=\"hljs-_\">-e</span>2e</pre><h4>Options</h4>\n<p>See <a href=\"https://github.com/electron-userland/electron-builder#cli-usage\">electron-builder CLI Usage</a></p>\n<h4>Module Structure</h4>\n<p>This boilerplate uses a <a href=\"https://github.com/electron-userland/electron-builder/wiki/Two-package.json-Structure\">two package.json structure</a>.</p>\n<ol>\n<li>If the module is native to a platform or otherwise should be included with the published package (i.e. bcrypt, openbci), it should be listed under <code>dependencies</code> in <code>./app/package.json</code>.</li>\n<li>If a module is <code>import</code>ed by another module, include it in <code>dependencies</code> in <code>./package.json</code>.   See <a href=\"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md\">this ESLint rule</a>.</li>\n<li>Otherwise, modules used for building, testing and debugging should be included in <code>devDependencies</code> in <code>./package.json</code>.</li>\n</ol>\n<h2>Static Type Checking</h2>\n<p>This project comes with Flow support out of the box! You can annotate your code with types, <a href=\"https://github.com/amilajack/eslint-plugin-flowtype-errors\">get Flow errors as ESLint errors</a>, and get <a href=\"https://github.com/gcanti/babel-plugin-tcomb-boilerplate\">type errors during runtime</a> during development. Types are completely optional.</p>\n<h2>Native-like UI</h2>\n<p>If you want to have native-like User Interface (OS X El Capitan and Windows 10), <a href=\"https://github.com/gabrielbull/react-desktop\">react-desktop</a> may perfect suit for you.</p>\n<h2>Dispatching redux actions from main process</h2>\n<p>see discusses in <a href=\"https://github.com/chentsulin/electron-react-boilerplate/issues/118\">#118</a> and <a href=\"https://github.com/chentsulin/electron-react-boilerplate/issues/108\">#108</a></p>\n<h2>How to keep the boilerplate updated</h2>\n<p>If your application is a fork from this repo, you can add this repo to another git remote:</p>\n<pre>git remote add upstream https://github.com/chentsulin/electron-react-boilerplate.git</pre><p>Then, use git to merge some latest commits:</p>\n<pre>git pull upstream master</pre><h2>Maintainers</h2>\n<ul>\n<li><a href=\"https://github.com/chentsulin\">C. T. Lin</a></li>\n<li><a href=\"https://github.com/jhen0409\">Jhen-Jie Hong</a></li>\n<li><a href=\"https://github.com/amilajack\">Amila Welihinda</a></li>\n</ul>\n<h2>License</h2>\n<p>MIT &#xA9; <a href=\"https://github.com/chentsulin\">C. T. Lin</a></p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/matthieuh/electron-react-boilerplate",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/matthieuh",
+          "text": "matthieuh"
+        }
+      ]
+    }
+  ]
+}
